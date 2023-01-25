@@ -1,0 +1,65 @@
+.body1{
+    margin-top:120px;
+    align-items:center;
+}
+.image {
+    width: 576px;
+    height: 576px;
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    border-radius: 50%;
+    margin:auto;
+    display:block;
+}
+.logo {
+    width: 272px;
+    height: 58px;
+    margin-bottom:15px;
+}
+.discription {
+    font: normal normal 300 40px/47px Roboto;
+    color: #3E3E3E;
+    margin-bottom:45px;
+}
+input[type=text] {
+    width: 429px;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    font: normal normal normal 15px/20px Roboto;
+    color: #ADADAD;
+    margin-bottom:15px;
+}
+input[type=password] {
+    width: 429px;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    font: normal normal normal 15px/20px Roboto;
+    color: #ADADAD;
+    margin-bottom: 25px;
+}
+input[type=submit] {
+  
+    width: 138px;
+    height: 45px;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    border-style: none;
+}
+.forgotpass {
+    font: normal normal normal 15px/20px Roboto;
+    color: #ADADAD;
+    text-decoration: none;
+    margin-left: 185px;
+    margin-top: 15px;
+}
+.registertext {
+    font: normal normal normal 15px/20px Roboto;
+    color: #ADADAD;
+    margin-top:15px;
+}
