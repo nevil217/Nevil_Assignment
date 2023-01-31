@@ -6,35 +6,91 @@
     <link href="css/style2.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <script href="js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changeImage1() {
+            document.getElementById('cimage1').src = "images/dashboard-active.svg";
+        }
+        function changeDefault1() {
+            document.getElementById('cimage1').src = "images/dashboard-default.svg";
+        }
+        function changeImage2() {
+            document.getElementById('cimage2').src = "images/graph-active.svg";
+        }
+        function changeDefault2() {
+            document.getElementById('cimage2').src = "images/graph-default.svg";
+        }
+        function changeImage3() {
+            document.getElementById('cimage3').src = "images/inbox-active.svg";
+        }
+        function changeDefault3() {
+            document.getElementById('cimage3').src = "images/inbox-default.svg";
+        }
+        function changeImage4() {
+            document.getElementById('cimage4').src = "images/clock-active.svg";
+        }
+        function changeDefault4() {
+            document.getElementById('cimage4').src = "images/clock-default.svg";
+        }
+        function changeImage5() {
+            document.getElementById('cimage5').src = "images/user-active.svg";
+        }
+        function changeDefault5() {
+            document.getElementById('cimage5').src = "images/user-default.svg";
+        }
+        function changeImage6() {
+            document.getElementById('cimage6').src = "images/maintenance-active.svg";
+        }
+        function changeDefault6() {
+            document.getElementById('cimage6').src = "images/maintenance-default.svg";
+        }
+        function changeImage7() {
+            document.getElementById('cimage7').src = "images/setting-active.svg";
+        }
+        function changeDefault7() {
+            document.getElementById('cimage7').src = "images/setting-default.svg";
+        }
+    </script>
 </head>
 <body>
     <div class="body">
-        <header class="d-flex flex-wrap justify-content align-items-center">
-            <img src="images/menu-bar.svg" class="icnmenu" />
-            <img src="images/header-logo.svg" class="icnlogo" />
-            <img src="images/search-icon.svg" class="icnsearch" />
-            <input type="text" placeholder="Search" class="txtsearch" />
-            <img src="images/notification-icon.svg" class="icnnotification" />
-            <img src="images/profile.png" class="imgprofile"/><span class="proname">Jhon Doe</span>
-            <img src="images/downward-arrow.svg" class="icndown"/>
-        </header>
+        <header class="pd-3">
+            <div>
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="d-flex align-items-center">
+                        <button class="navbar-toggler" id="sidebarcollapse" type="button" data-toggle="collapse" data-target="#collapsenav" aria-controls="collapsenav" area-expanded="false" area-label="Toggle navigation">
+                            <img src="images/menu-bar.svg" class="icnmenu" />
+                        </button>
+                        <img src="images/header-logo.svg" class="icnlogo" />
+                        <img src="images/search-icon.svg" class="icnsearch" />
+                        <input type="text" placeholder="Search" class="txtsearch" />
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="images/notification-icon.svg" class="icnnotification" />
+                        <img src="images/profile.png" class="imgprofile" /><span class="proname">Jhon Doe</span>
+                        <img src="images/downward-arrow.svg" class="icndown" />
+                    </div>
+                </div>
+            </div>
+        </header>   
         <section>
-            <nav class="d-flex justify-content-center">
-                <ul class="nav flex-column">
-                    <li class="nav-link"><a href="#" class="txtsidebar"><img src="images/dashboard-default.svg" class="icnsidebar" />Dashboard</a></li>
-                    <li class="nav-link"><a href="#" class="txtsidebar"><img src="images/graph-default.svg" class="icnsidebar" />Analysis</a></li>
-                    <li class="nav-link"><a href="#" class="txtsidebar"><img src="images/inbox-default.svg" class="icnsidebar" />Inbox</a></li>
-                    <li class="nav-link"><a href="#" class="txtsidebar"><img src="images/clock-default.svg" class="icnsidebar" />History</a></li>
-                    <li class="nav-link"><a href="#" class="txtsidebar"><img src="images/user-default.svg" class="icnsidebar" />Users</a></li>
-                    <li class="nav-link"><a href="#" class="txtsidebar"><img src="images/maintenance-default.svg" class="icnsidebar" />Maintenance</a></li>
-                    <li class="nav-link"><a href="#" class="txtsidebar"><img src="images/setting-default.svg" class="icnsidebar" />Setting</a></li>
-                </ul>
+            <nav class="d-flex justify-content-center navbar-expand-lg" id="sidebar">
+                <div class="">
+                    <ul class="nav flex-column mb-auto navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#" class="nav-link link-dark" onmouseover="changeImage1()" onmouseout="changeDefault1()" ><img src="images/dashboard-default.svg" id="cimage1" class="icnsidebar" />Dashboard</a></li>
+                        <li><a href="#" class="nav-link link-dark" onmouseover="changeImage2()" onmouseout="changeDefault2()"><img src="images/graph-default.svg" id="cimage2" class="icnsidebar" />Analysis</a></li>
+                        <li><a href="#" class="nav-link link-dark" onmouseover="changeImage3()" onmouseout="changeDefault3()"><img src="images/inbox-default.svg" id="cimage3" class="icnsidebar" />Inbox</a></li>
+                        <li><a href="#" class="nav-link link-dark" onmouseover="changeImage4()" onmouseout="changeDefault4()"><img src="images/clock-default.svg" class="icnsidebar" id="cimage4" />History</a></li>
+                        <li><a href="#" class="nav-link link-dark" onmouseover="changeImage5()" onmouseout="changeDefault5()"><img src="images/user-default.svg" class="icnsidebar" id="cimage5" />Users</a></li>
+                        <li><a href="#" class="nav-link link-dark" onmouseover="changeImage6()" onmouseout="changeDefault6()"><img src="images/maintenance-default.svg" class="icnsidebar" id="cimage6" />Maintenance</a></li>
+                        <li><a href="#" class="nav-link link-dark" onmouseover="changeImage7()" onmouseout="changeDefault7()"><img src="images/setting-default.svg" class="icnsidebar" id="cimage7" />Setting</a></li>
+                    </ul>
+                </div>
             </nav>
 
             <article style="background: #FAFAFA;padding-left:300px;padding-bottom:50px;padding-right:50px">
                 <p style="font-size:40px; line-height:40px; font-weight:bolder;padding-top:45px;">Dashboard</p>
                 <div>
-                    <ul class="d-flex justify-content-between" style="margin-top:30px;padding:0px">
+                    <ul class="d-flex justify-content-between flex-wrap align-content-stretch" style="margin-top:30px;padding:5px">
                         <li id="ulitems" class="d-flex justify-content-center align-items-center">
                             <img src="images/star.svg" class="imgdash" />
                             <p class="headd">23,456<br /><span class="subheadd">New Products</span></p>
@@ -58,110 +114,148 @@
                     </ul>
                 </div><br />
 
-                <div class="row d-flex justify-content-between">
-                    <div class="col">
-                        <div class="sale">
-                            <p style="margin-left:30px;margin-top:10px;font-size: 30px; font-family: 'Roboto', sans-serif; font-weight: bolder; line-height: 30px;">
-                                Sale
-                                <a href="#" style="margin-left:480px;text-decoration: none; color: #ADADAD; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: normal normal normal; line-height: 16px; ">Weekly</a>
-                                <a href="#" style="margin-left:20px;text-decoration: none; color: #ADADAD; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: normal normal normal; line-height: 16px;">Monthly</a>
-                                <a href="#" style="margin-left:20px;text-decoration: none; color: #ADADAD; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: normal normal normal; line-height: 16px;">Yearly</a>
-                            </p>
-                            <img class="imggraph" src="images/data-graph.png" />
+                <div class="row d-flex flex-wrap justify-content-between">
+                    <div class="col col-md-8 col-sm-12" >
+                        <div class="sale d-flex flex-column justify-content-around">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p style="font-size: 30px; font-family: 'Roboto', sans-serif; font-weight: bolder; line-height: 30px;">
+                                        Sale
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="#" style="text-decoration: none; color: #ADADAD; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: normal normal normal; line-height: 16px; ">Weekly</a>
+                                    <a href="#" style="margin-left:20px;text-decoration: none; color: #ADADAD; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: normal normal normal; line-height: 16px;">Monthly</a>
+                                    <a href="#" style="margin-left:20px; color: red; font-size: 12px; font-family: 'Roboto', sans-serif; font-weight: normal normal normal; line-height: 16px;">Yearly</a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <img class="imggraph" src="images/data-graph.png" />
+                            </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="salesctry">
-                            <p style="margin-left:30px;font-size: 25px; font-family: 'Roboto', sans-serif; font-weight: bolder; line-height: 30px;">Sales by Country</p>
-                            <img src="images/pie-chart.svg" />
+                            <div>
+                                <p style="font-size: 25px; font-family: 'Roboto', sans-serif; font-weight: bolder; line-height: 30px;">Sales by Country</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <img src="images/pie-chart.svg" class="imgpie" />
+                            </div>
+                           
+                            <div class="row">
+                                <div class="col d-flex align-items-center">
+                                    <div class="red">&bull;</div>
+                                    <span class="textpie">United States of America</span>
+                                </div>
+                                <div class="col d-flex align-items-center">
+                                    <div class="green">&bull;</div>
+                                    <span class="textpie">Canada</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex align-items-center">
+                                    <div class="orange">&bull;</div>
+                                    <span class="textpie">Russia</span>
+                                </div>
+                                <div class="col d-flex align-items-center">
+                                    <div class="yellow">&bull;</div>
+                                    <span class="textpie">India</span>
+                                </div>
+                            </div>  
                         </div>
                     </div>   
                 </div>
 
                 <div class="invoices">
-                    <p style="margin-left: 30px;font-size: 25px; font-family: 'Roboto', sans-serif; font-weight: bolder; line-height: 30px;">Invoices</p>
-                    <table class="table">
-                        <tr>
-                            <th scope="col">Invoice</th>
-                            <th scope="col">Company name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Due Date</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Amount</th>
-                        </tr>
-                        <tr>
-                            <td scope="row">651535</td>
-                            <td>Public Adjusting Firm</td>
-                            <td>georgia.young@example.com</td>
-                            <td>24 May, 2020</td>
-                            <td>Paid</td>
-                            <td>$47,800</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">558612</td>
-                            <td>Other</td>
-                            <td>jessica.hanson@example.com</td>
-                            <td>24 May, 2020</td>
-                            <td>Paid</td>
-                            <td>$98,000</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">558612</td>
-                            <td>Vendor</td>
-                            <td>alma.lawson@example.com</td>
-                            <td>8 Sep, 2020</td>
-                            <td>Paid</td>
-                            <td>$20,900</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">558612</td>
-                            <td>Property Management Company</td>
-                            <td>kenzi.lawson@example.com</td>
-                            <td>22 Oct, 2020</td>
-                            <td>Paid</td>
-                            <td>$10,570</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">651535</td>
-                            <td>Subcontractor Company</td>
-                            <td>jackson.graham@example.com</td>
-                            <td>1 Feb, 2020</td>
-                            <td>Paid</td>
-                            <td>$10,200</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">653518</td>
-                            <td>Mortgage Company</td>
-                            <td>felicia.reid@example.com</td>
-                            <td>22 Oct, 2020</td>
-                            <td>Paid</td>
-                            <td>$12,600</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">487441</td>
-                            <td>TPA</td>
-                            <td>dolores.chambers@example.com</td>
-                            <td>21 Sep, 2020</td>
-                            <td>Paid</td>
-                            <td>$11,170</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">267400</td>
-                            <td>Fire Department</td>
-                            <td>nevaeh.simmons@example.com</td>
-                            <td>17 Oct, 2020</td>
-                            <td>Paid</td>
-                            <td>$28,000</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">449003</td>
-                            <td>Insurance Carrier</td>
-                            <td>curtis.weaver@example.com</td>
-                            <td>21 Sep, 2020</td>
-                            <td>Paid</td>
-                            <td>$10,000</td>
-                        </tr>
-                    </table>
+                    <div class="d-flex justify-content-between">
+                        <p style="margin-left: 30px;font-size: 25px; font-family: 'Roboto', sans-serif; font-weight: bolder; line-height: 30px;">Invoices</p>
+                        <a href="#" style="color:#C8242F">View all</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <th scope="col">Invoice</th>
+                                <th scope="col">Company name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Due Date</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                            <tr>
+                                <td scope="row">651535</td>
+                                <td>Public Adjusting Firm</td>
+                                <td>georgia.young@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td>Paid</td>
+                                <td>$47,800</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">558612</td>
+                                <td>Other</td>
+                                <td>jessica.hanson@example.com</td>
+                                <td>24 May, 2020</td>
+                                <td>Paid</td>
+                                <td>$98,000</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">558612</td>
+                                <td>Vendor</td>
+                                <td>alma.lawson@example.com</td>
+                                <td>8 Sep, 2020</td>
+                                <td>Paid</td>
+                                <td>$20,900</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">558612</td>
+                                <td>Property Management Company</td>
+                                <td>kenzi.lawson@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td>Paid</td>
+                                <td>$10,570</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">651535</td>
+                                <td>Subcontractor Company</td>
+                                <td>jackson.graham@example.com</td>
+                                <td>1 Feb, 2020</td>
+                                <td>Failed</td>
+                                <td>$10,200</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">653518</td>
+                                <td>Mortgage Company</td>
+                                <td>felicia.reid@example.com</td>
+                                <td>22 Oct, 2020</td>
+                                <td>Pending</td>
+                                <td>$12,600</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">487441</td>
+                                <td>TPA</td>
+                                <td>dolores.chambers@example.com</td>
+                                <td>21 Sep, 2020</td>
+                                <td>Paid</td>
+                                <td>$11,170</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">267400</td>
+                                <td>Fire Department</td>
+                                <td>nevaeh.simmons@example.com</td>
+                                <td>17 Oct, 2020</td>
+                                <td>Failed</td>
+                                <td>$28,000</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">449003</td>
+                                <td>Insurance Carrier</td>
+                                <td>curtis.weaver@example.com</td>
+                                <td>21 Sep, 2020</td>
+                                <td>Paid</td>
+                                <td>$10,000</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </article>
         </section>

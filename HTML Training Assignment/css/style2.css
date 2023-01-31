@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
 header {
-    padding:25px;
+    padding: 25px 30px 25px 30px;
 }
 .icnmenu {
-    margin-right:15px;
+    margin-right:30px;
     width: 25px;
     height: 25px;
 }
 .icnlogo {
-    margin-right:25px;
+    margin-right:80px;
     width: 150px;
     height: 30px;
 
 }
 .icnsearch {
-    margin-right:5px;
+    margin-right:15px;
     width: 25px;
     height: 25px;
 }
@@ -27,17 +27,17 @@ header {
     border-style:none;
 }
 .icnnotification{
-    margin-left:1270px;
+    margin-right:55px;
     width:25px;
     height:25px;
 }
 .imgprofile{
-    margin-left:35px;
-    margin-right:5px;
+    margin-right:15px;
     width:50px;
     height:50px;
 }
 .proname {
+    margin-right: 15px;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: normal normal normal;
@@ -64,15 +64,7 @@ ul{
     height:25px;
     margin-right:10px;
 }
-.txtsidebar {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal normal normal;
-    line-height: 21px;
-}
-.nav-link:hover {
+.nav li a:hover {
     background: #FFF3F4;
     color: #C8242F;
 }
@@ -104,6 +96,8 @@ ul{
     align-items:center;
 }
 #ulitems {
+    margin:5px;
+    padding:5px;
     display: inline; 
     width: 240px; 
     height: 140px; 
@@ -111,31 +105,71 @@ ul{
     border-radius:8px;
 }
 .imggraph{
-    margin-top:10px;
-    margin-left:20px;
-    width:800px;
-    height:350px;
+    margin:10px;
+    /*width:100%;*/
+    max-width:100%;
+    height:auto;
 }
 .sale {
-    padding:20px 10px 10px 20px;
-    width: 900px;
-    height: 500px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin:0px 10px 10px 20px;
+    padding:10px;
+    width: auto;
+    height: 500px;                                                                                                                                                                                                                                                                          
+    background: #FFFFFF;
     border-radius: 8px;
 }
 .salesctry {
+    margin: 0px 10px 10px 0px;
     padding:10px;
-    width: 490px;
+    width: auto;
     height: 500px;
     background: #FFFFFF;
     border-radius: 8px;
-    margin-left:35px;
+}
+.imgpie {
+    /*width:250px;*/
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.red {
+    color: #C8242F;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    font-size: 40px;
+}
+.green {
+    color: #A2B86C;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    font-size: 40px;
+}
+.orange {
+    color: #F16C20;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    font-size: 40px;
+}
+.yellow {
+    color: #EBC844;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    font-size: 40px;
+}
+.textpie {
+    width:175px;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 .invoices {
-    padding-left:10px;
-    padding-right:10px;
-    margin-top:40px;
-    width: 1217px;
+    padding:10px;
+    margin:40px 20px 10px 20px;
+    max-width: 100%;
     height: 500px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
